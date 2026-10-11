@@ -31,7 +31,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
       body: JSON.stringify({
-        model: 'deepseek-ai/deepseek-v4.1-flash',
+        model: 'google/gemma-4-31b-it',
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt }
